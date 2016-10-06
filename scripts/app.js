@@ -7,13 +7,10 @@ function init() {
   $('#hamburger').click(function() {
     $('.sidebar-wrapper').toggleClass('open');
   });
-    });
-}
-
 
 function getWeather() {
   $.ajax({
-    url: 'http://api.wunderground.com/api/6fad8cf46e561ec7/geolookup/conditions/q/07074.json',
+    url: "http://api.wunderground.com/api/619f1641d1ce38ec/geolookup/conditions/q/07074.json",
     dataType: 'jsonp',
     success: function(response) {
       var conditions = response.current_observation.weather;
@@ -21,7 +18,6 @@ function getWeather() {
     }
   });
 }
-
 
 function getTimeOfDay() {
   var time = new Date();
@@ -42,11 +38,11 @@ function getTimeOfDay() {
 
 function loadImage(conditions) {
   var imageSRC = 'img/weather/hero-'
-  var validConditions = ['clear', 'cloudy', 'rain', 'snow'];
+  var validConditions = ["clear", "cloudy", "rain", "snow"];
   var timeOfDay = getTimeOfDay();
   conditions = conditions.toLowerCase();
 
-  for (var i = 0; i < validConditions.length; i++) {
+  for (var i = 0; i<validConditions.length; i++) {
     if (conditions === validConditions[i]) {
       break;
     } else {
@@ -55,7 +51,10 @@ function loadImage(conditions) {
   }
 
   imageSRC = imageSRC + conditions + '-' + timeOfDay + '.jpg';
-  $('#intro').css('background-image', 'url('+ imageSRC +')');
+  $('#intro').css('background-image', 'url('+ imageSRC + ')');
+  }
+
+  });
 }
 
 init();
