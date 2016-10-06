@@ -19,6 +19,70 @@
     background-image: url("../img/bridge/bridge.jpg");
     width: 100%; }
 
+.sidebar-wrapper {
+  color: white;
+  font-family: "Roboto", serif;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  z-index: 2;
+  position: fixed;
+  width: 0px;
+  height: 100%;
+  background: #000;
+  transition: all 0.5s ease; }
+  .sidebar-wrapper a {
+    color: white;
+    margin-left: 10px;
+    font-size: 24px; }
+  .sidebar-wrapper h2 {
+    padding: 0px;
+    margin: 4px;
+    font-size: 40px;
+    line-height: 40px; }
+  .sidebar-wrapper.open {
+    width: 320px !important; }
+
+.sidebar-links {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+#close-btn {
+  align-self: flex-start;
+  margin-left: 30px;
+  margin-top: 10px;
+  color: white;
+  cursor: pointer; }
+  #close-btn:hover {
+    opacity: .5; }
+  #close-btn img {
+    width: 30px;
+    height: 30px; }
+
+#hamburger {
+  display: flex;
+  cursor: pointer;
+  position: fixed;
+  height: 34px;
+  width: 40px;
+  left: 30px;
+  top: 20px;
+  z-index: 1;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px; }
+  #hamburger img {
+    width: 30px;
+    height: 30px; }
+  #hamburger:hover {
+    background-color: #00CFFF; }
+
 #intro h1, #intro h5 {
   text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25); }
 #intro h1 {
@@ -40,7 +104,7 @@
   border-radius: 4px;
   cursor: pointer; }
   .cta:hover {
-    background-color: #00CFFF; }
+    background: #00CFFF; }
 
 #about {
   min-height: 0; }
@@ -51,8 +115,8 @@
   text-transform: uppercase;
   text-align: right; }
   .left-col h2 {
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin-top: 0;
+    margin-bottom: 0;
     font-size: 60px;
     font-weight: 700;
     line-height: 55px; }
@@ -66,7 +130,7 @@
 
 .gallery {
   background-color: #EEFDF9; }
-  .gallery.container {
+  .gallery .container {
     padding: 0;
     margin: 0; }
 
@@ -82,9 +146,9 @@
   text-align: center; }
   #contact p {
     text-align: center;
-    font-size: 24px;
     max-width: 740px;
-    margin-bottom: 40px; }
+    margin-bottom: 40px;
+    font-size: 24px; }
 
 #social {
   padding: 20px; }

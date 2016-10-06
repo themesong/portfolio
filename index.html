@@ -8,11 +8,14 @@
     <link type="text/css" rel="stylesheet" href="style/main.css">
     <!-- Google Font Addition -->
     <link href='https://fonts.googleapis.com/css?family=Roboto:100,700' rel='stylesheet' type='text/css'>
+    <!-- jQuery Library -->
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+    <!-- My JavaScript -->
+    <script src="scripts/app.js"></script>
     <title>Jorge Tovar's Portfolio</title>
   </head>
-
   <body>
-    
+
     <!-- Google Tag Manager -->
     <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-T2L4DV"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -22,8 +25,24 @@
     '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-T2L4DV');</script>
     <!-- End Google Tag Manager -->
-    
-    <div id="intro" class="hero landscape container-fluid">
+
+    <div class="sidebar-wrapper">
+        <div id="close-btn">
+          <img src="img/icons/x.svg" alt="close button" />
+        </div>
+      <h2>Jorge</h2>
+      <h2>Tovar</h2>
+        <div class="sidebar-links">
+          <a href="#about">About</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#contact">Contact</a>
+        </div>
+    </div>
+
+    <div id="intro" class="container-fluid hero landscape">
+        <div id="hamburger">
+          <img src="img/icons/menu.svg" alt="menu" />
+        </div>
       <h1>Jorge Tovar</h1>
       <h5>Runner, Lifter, Technologist</h5>
       <a href="#gallery"><button type="button" class="cta">See More</button></a>
