@@ -1,18 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang"en">
   <head>
     <meta charset="utf-8" />
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Jorge Tovar is an avid runner, lifter and reader. Follow him on his journey through life." />
+    <meta name="keywords" content="run, lift, read, eat, career, jorge, nutrition, blog"  />
+    <meta name="robots" content="index,folow"/>
+    <title>The Running Thought by Jorge Tovar</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
     <!-- My Own Stylesheet -->
     <link type="text/css" rel="stylesheet" href="style/main.css">
+
     <!-- Google Font Addition -->
     <link href='https://fonts.googleapis.com/css?family=Roboto:100,700' rel='stylesheet' type='text/css'>
-    <!-- jQuery Library -->
-    <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
-    <!-- My JavaScript -->
-    <script src="scripts/app.js"></script>
-    <title>The Running Thought by Jorge Tovar</title>
+
   </head>
   <body>
 
@@ -26,23 +31,36 @@
     })(window,document,'script','dataLayer','GTM-T2L4DV');</script>
     <!-- End Google Tag Manager -->
 
-    <div class="sidebar-wrapper">
-        <div id="close-btn">
-          <img src="img/icons/x.svg" alt="close button" />
-        </div>
-      <h2>Jorge</h2>
-      <h2>Tovar</h2>
-        <div class="sidebar-links">
-          <a href="#about">About</a>
-          <a href="#gallery">Gallery</a>
-          <a href="#contact">Contact</a>
-        </div>
-    </div>
+    <!-- FIXED NAVBAR -->
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="index.html"></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div id="navbar" class="collapse navbar-collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">The Running Thought<span class="sr-only">(current)</span></a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+              </ul>
+
+              <ul class="nav navbar-nav navbar-right">
+                  <li><a href="#contact">Contact Me</a></li>
+              </ul>
+
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container -->
+        </nav>
 
     <div id="intro" class="container-fluid hero landscape">
-        <div id="hamburger">
-          <img src="img/icons/menu.svg" alt="menu" />
-        </div>
       <h1>Jorge Tovar</h1>
       <h5>Runner, Lifter, Technologist</h5>
       <a href="#gallery"><button type="button" class="cta">See More</button></a>
@@ -111,7 +129,7 @@
           <a href="https://twitter.com/itstovybaby"><img src="img/icons/twitter.svg" alt="Twitter"></a>
         </div>
         <div class="col-md-4">
-          <a href="https://www.instagram.com/tovybaby/"><img src="img/icons/instagram.svg" alt="Instagram"></a>
+          <a href="https://www.instagram.com/runliftread/"><img src="img/icons/instagram.svg" alt="Instagram"></a>
         </div>
         <div class="col-md-4">
           <a href="https://medium.com/@jorge.tovar"><img src="img/icons/medium.svg" alt="Medium"></a>
@@ -135,6 +153,20 @@
       <div id="copyright"><span>&copy; Jorge Tovar</span></div>
     </div>
 
-  </body>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- jQuery Library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
+    <!-- Bootstrap JS Library -->
+    <script src="js/bootstrap.js"></script>
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- My JavaScript -->
+    <script src="scripts/app.js"></script>
+
+  </body>
 </html>
